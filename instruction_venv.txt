@@ -1,0 +1,31 @@
+
+Создание виртуального окружения
+В корневом каталоге проекта в командной строке вводим
+python3 -m venv venv
+Создается папка venv
+
+Для активации в Linux:
+source venv/bin/activate
+
+Для Windows:
+venv\Scripts\activate
+
+Отключение 
+deactivate
+
+
+Работа с менеджером pip
+pip freeze   #распечатка существующих пакетов
+pip install Название  #установка выбранных пакетов (через пробел)
+pip install -U Название  #Обновление выбранных пакетов
+python -m pip install --upgrade pip  # Обновление pip
+
+pip uninstall Название -y   #удаление
+
+Создание файла с зависимостями
+pip freeze > requirements.txt
+
+Восстановление из файла
+pip install -r requirements.txt
+
+pip install pytest hypothesis
